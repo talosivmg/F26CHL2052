@@ -11,12 +11,8 @@ if temperatureMode == "FtoC":
 elif temperatureMode == "CtoF":
     temperatureCalculation = (contentsValue * 9 / 5 ) + 32  #If C to F then assign calculateed fahrenheit to temperatureCalculation
 
-#print(f"{temperatureCalculation}")
 with open ("challenge.out", "w") as outputFile:
     outputFile.write(str(temperatureCalculation))
-
-print("use CLI type challenge.out")
-
 
 
 """
