@@ -1,13 +1,21 @@
+import sys
+temperatureMode = sys.argv [1]      # Gets argument 1
 
-"""
-open ("challenge.data","r") as rawFile:
-   contents = rawFile.read()
-"""
-import sys                              # Imports sys module
+with open ("challenge.data","r") as rawFile:         #Reads file and gets value stripping charatures
+   contents = rawFile.read().strip()
+   contentsValue = float(contents)          #converts to integer decimal
 
-arg = sys.argv [1]                      # Assigns arg the value of sys.argv[1] 
 
-print(f"{arg}: {sys.argv.index(arg)}")  # Prints an f string with the value of arg then plain text ': ' then the index position of sys.argv where arg is located in the list
+if temperatureMode == "FtoC":
+    temperatureCalculation = (contentsValue - 32 ) * 5 / 9  #If F to C then assign calculated celsius to temperatureCalculation
+elif temperatureMode == "CtoF":
+    temperatureCalculation = (contentsValue * 9 / 5 ) + 32  #If C to F then assign calculateed fahrenheit to temperatureCalculation
+
+    #print(f"{arg}: {sys.argv.index(arg)}")
+
+
+print(f"{temperatureCalculation}")
+
 
 """
 Chanllenge

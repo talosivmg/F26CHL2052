@@ -11,5 +11,5 @@ This Python Script reads a value from a file named challenge.data. The value rep
 * **User defined functions** 'none'  (only use current reviewed functions)
 
 ## How to run
-py chl2052.py FtoC
-py chl2052.py CtoF
+* ** CLI py chl2052.py FtoC
+* ** CLI py chl2052.py CtoF
